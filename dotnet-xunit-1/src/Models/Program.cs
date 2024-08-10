@@ -1,4 +1,4 @@
-﻿using Models.Pets;
+﻿using Models.Points;
 
 namespace Models
 {
@@ -6,12 +6,8 @@ namespace Models
   {
     public static void Main(string[] args)
     {
-      List<IPet> pets = [new Dog(), new Cat(), new Bird()];
-
-      foreach (IPet pet in pets)
-      {
-        Console.WriteLine(pet.TalkToOwner());
-      }
+      Point firstPoint = new(5, 4);
+      firstPoint.Display();
     }
   }
 }
