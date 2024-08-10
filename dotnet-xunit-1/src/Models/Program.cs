@@ -6,8 +6,8 @@ namespace Models
   {
     public static void Main(string[] args)
     {
-      Point firstPoint = new(5, 4);
-      firstPoint.Display();
+      Point point = new(3, 4);
+      point.Display();
     }
   }
 }

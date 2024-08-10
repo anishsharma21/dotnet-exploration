@@ -2,6 +2,11 @@ using System.Drawing;
 
 namespace Models.Points
 {
+  public enum CartesianType
+  {
+    XY,
+    Imaginary,
+  }
   public struct Point
   {
     public int X { get; set; }
@@ -15,7 +20,7 @@ namespace Models.Points
 
     public void Display()
     {
-      Console.WriteLine($"Point: ({X}, {Y})");
+      Console.WriteLine($"Point: ({X}, {Y})\nCartesian plane: {CartesianType.XY}");
     }
   }
 }
