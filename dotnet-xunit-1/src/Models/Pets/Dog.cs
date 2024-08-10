@@ -1,10 +1,7 @@
 namespace Models.Pets
 {
-  class Dog : IPet
+  public class Dog : IPet
   {
-    public string TalkToOwner()
-    {
-      return "Woof!";
-    }
+    public string TalkToOwner() => "Woof!";
   }
 }

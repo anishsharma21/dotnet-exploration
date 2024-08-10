@@ -1,6 +1,6 @@
 namespace Models.Pets
 {
-  interface IPet
+  public interface IPet
   {
     string TalkToOwner();
   }
