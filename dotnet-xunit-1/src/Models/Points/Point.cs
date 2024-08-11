@@ -7,18 +7,12 @@ namespace Models.Points
     XY,
     Imaginary,
   }
-  public struct Point
+  public struct Point(int x, int y)
   {
-    public int X { get; set; }
-    public int Y { get; set; }
+    public int X { get; set; } = x;
+    public int Y { get; set; } = y;
 
-    public Point(int x, int y)
-    {
-      X = x;
-      Y = y;
-    }
-
-    public void Display()
+    public readonly void Display()
     {
       Console.WriteLine($"Point: ({X}, {Y})\nCartesian plane: {CartesianType.XY}");
     }

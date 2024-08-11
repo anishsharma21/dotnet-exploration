@@ -1,4 +1,4 @@
-﻿using Models.Points;
+﻿using Models.Fields;
 
 namespace Models
 {
@@ -6,8 +6,13 @@ namespace Models
   {
     public static void Main(string[] args)
     {
-      Point point = new(3, 4);
-      point.Display();
+      Example.ExampleStart();
+      Constants con = new(new DateTime())
+      {
+        Age = 5
+      };
+      Console.WriteLine(con.Age);
+      con.Age = -5;
     }
   }
 }
