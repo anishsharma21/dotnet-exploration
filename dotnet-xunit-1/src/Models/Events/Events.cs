@@ -7,10 +7,9 @@ namespace Models.Events
     public class ProcessBusinessLogic
     {
       public event Notify? ProcessCompleted;
-
       public void StartProcess()
       {
-        Console.WriteLine("Process started...");
+        Console.WriteLine($"Process started for...");
         Thread.Sleep(3000);
         OnProcessComplete();
       }

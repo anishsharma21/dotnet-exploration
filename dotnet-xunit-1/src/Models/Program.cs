@@ -1,20 +1,18 @@
-﻿using System.Reflection.Metadata;
-using Models.Events;
-
-namespace Models
+﻿namespace Models
 {
   public class Program
   {
     public static void Main(string[] args)
     {
-      ExampleEvent.ProcessBusinessLogic processBusinessLogic = new ExampleEvent.ProcessBusinessLogic();
-      processBusinessLogic.ProcessCompleted += Bl_ProcessCompleted;
-      processBusinessLogic.StartProcess();
+      int[] baseValues = [2, 8, 10, 16];
+      short value = short.MaxValue;
+      foreach (int baseValue in baseValues)
+      {
+        string s = Convert.ToString(value, baseValue);
+        short value2 = Convert.ToInt16(s, baseValue);
+        Console.WriteLine($"{value} --> {s}\n{baseValue} --> {value2}");
+      }
     }
 
-    private static void Bl_ProcessCompleted()
-    {
-      Console.WriteLine("Process completed!");
-    }
   }
 }
