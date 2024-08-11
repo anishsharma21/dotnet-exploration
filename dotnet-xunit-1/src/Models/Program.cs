@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿using Models.Generics;
 
 namespace Models
 {
@@ -6,22 +6,18 @@ namespace Models
   {
     public static void Main(string[] args)
     {
-      Console.ForegroundColor = ConsoleColor.Blue;
-      ArrayList arrayList = [1, 2, 3, 4];
-      List<int> ints = [1, 2, 3, 4];
-      Dictionary<int, string> keyValuePairs = new()
+      SimpleGeneric<string> simpleGeneric = new()
       {
-          { 1, "one" },
-          { 2, "two" },
-          { 3, "three" }
+        Field = "field init"
       };
-      Hashtable hashtable = [];
-      hashtable.Add("hi there", 1);
+      Console.WriteLine(simpleGeneric.Field);
 
-      foreach (KeyValuePair<int, string> kvp in keyValuePairs)
-      {
-        Console.WriteLine($"Key: {kvp.Key}, Value: {kvp.Value}");
-      }
+      SimpleGeneric<int> simpleGeneric2 = new();
+      Console.WriteLine(simpleGeneric2.GetType());
+
+      LinkedList<string> strings = new();
+      strings.AddFirst("First");
+      List<string> newList = [.. strings];
     }
 
   }
