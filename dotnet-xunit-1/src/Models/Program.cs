@@ -1,4 +1,5 @@
-﻿using Models.Fields;
+﻿using System.Reflection.Metadata;
+using Models.Events;
 
 namespace Models
 {
@@ -6,13 +7,14 @@ namespace Models
   {
     public static void Main(string[] args)
     {
-      Example.ExampleStart();
-      Constants con = new(new DateTime())
-      {
-        Age = 5
-      };
-      Console.WriteLine(con.Age);
-      con.Age = -5;
+      ExampleEvent.ProcessBusinessLogic processBusinessLogic = new ExampleEvent.ProcessBusinessLogic();
+      processBusinessLogic.ProcessCompleted += Bl_ProcessCompleted;
+      processBusinessLogic.StartProcess();
+    }
+
+    private static void Bl_ProcessCompleted()
+    {
+      Console.WriteLine("Process completed!");
     }
   }
 }
