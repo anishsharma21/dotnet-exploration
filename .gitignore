@@ -28,6 +28,7 @@ bower_components/
 *.dll
 *.exe
 *.pdb
+*.db
 *.cache
 *.ilk
 *.log
