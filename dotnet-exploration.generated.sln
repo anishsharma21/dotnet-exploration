@@ -19,6 +19,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A3F75B4E-6D0
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "dotnet-xunit-1\src\Models\Models.csproj", "{80EEEE9A-C15A-46EA-AC9B-4FACDA473C9B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "aspdotnet-webapi-ef-1", "aspdotnet-webapi-ef-1", "{BAD35750-31D0-429C-B8E2-4E0BFCFEBCEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "api", "aspdotnet-webapi-ef-1\api\api.csproj", "{1C4CA560-1C16-4394-97F9-B0B204812E9E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +45,10 @@ Global
 		{80EEEE9A-C15A-46EA-AC9B-4FACDA473C9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80EEEE9A-C15A-46EA-AC9B-4FACDA473C9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80EEEE9A-C15A-46EA-AC9B-4FACDA473C9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C4CA560-1C16-4394-97F9-B0B204812E9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C4CA560-1C16-4394-97F9-B0B204812E9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C4CA560-1C16-4394-97F9-B0B204812E9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C4CA560-1C16-4394-97F9-B0B204812E9E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,6 +59,7 @@ Global
 		{A2879186-2BE9-4332-9727-3C22B9ED14F4} = {818ED792-D8E5-44EA-8FDA-F606DC7AB26E}
 		{A3F75B4E-6D0A-4D63-B7AC-73E787AAF02D} = {AF49926B-A659-418E-BFA4-F827D8EC6D44}
 		{80EEEE9A-C15A-46EA-AC9B-4FACDA473C9B} = {A3F75B4E-6D0A-4D63-B7AC-73E787AAF02D}
+		{1C4CA560-1C16-4394-97F9-B0B204812E9E} = {BAD35750-31D0-429C-B8E2-4E0BFCFEBCEF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {343DBCFC-4932-48DA-A823-3C34925D6B4E}
