@@ -1,11 +1,20 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace api.Models;
 
 public class Comment
 {
-    public int Id { get; set; }
-    public string Title { get; set; } = string.Empty;
-    public string Content { get; set; } = string.Empty;
-    public DateTime CreatedOn { get; set; } = DateTime.Now;
-    public int? StockId { get; set; }
-    public Stock? Stock { get; set; }
+    public int Id { get; init; }
+    
+    [MaxLength(100)]
+    public string Title { get; init; } = string.Empty;
+    
+    [MaxLength(100)]
+    public string Content { get; init; } = string.Empty;
+    
+    public DateTime CreatedOn { get; init; } = DateTime.Now;
+    
+    public int? StockId { get; init; }
+    
+    public Stock? Stock { get; init; }
 }
